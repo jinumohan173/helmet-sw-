@@ -68,9 +68,10 @@ def pattern_detection(user):
 					flag=1
 					cv2.rectangle(frame,(min_x,min_y),(max_x,max_y),(0,255,0),2)
 			if flag==0:
-				print ("You are not wearing a helmet")
+				print ("You are not wearing a helmet$$$$$$")
 			else:
-				print ("Great!!!")
+				print ("helmet detected ####### ")
+				os.system("sudo fswebcam -d /dev/video0 -r 320x240 -S 2 person.jpg")
 		cv2.imshow('Edge Image',edge_image)
 		cv2.imshow('Detected',frame)
 		entered=1
