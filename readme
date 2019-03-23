@@ -1,0 +1,10 @@
+install apache server in rpi 
+sudo apt-get install apache2 -y
+
+5.run the php file in server 
+
+sudo apt-get install libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql php5-curl php5-gd
+
+got to 
+cd /var/www/
+and insert php file
